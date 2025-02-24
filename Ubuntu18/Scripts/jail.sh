@@ -36,6 +36,7 @@ fail2ban-client set apache-modsecurity bantime 3600
 fail2ban-client start apache-modsecurity
 
 fail2ban-client add ssh
+fail2ban-client set ssh enabled false
 fail2ban-client set ssh maxretry 3
 fail2ban-client set ssh bantime 3600
 fail2ban-client start ssh
